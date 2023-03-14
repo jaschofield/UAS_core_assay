@@ -9,3 +9,4 @@
 module load R/4.1.2-foss-2021b
 
 R CMD BATCH DNA_fa_join.R
+
