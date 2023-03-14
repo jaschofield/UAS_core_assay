@@ -655,7 +655,7 @@ UAS_count_master <- UAS_count_endo_joined %>% ungroup() %>%
 
 
 ## Bring in information about control genomic regions
-control_assignments <- read.csv(file = "../220713_control_region_assignments.csv")
+control_assignments <- read.csv(file = "UAS_control_region_assignments.csv")
 colnames(control_assignments) <- c("chromosome", "start", "end", "UAS_name", "FAIRE_score", "strand", "type", "join_ID")
 control_assignments$UAS_name <- as.character(control_assignments$UAS_name)
 UAS_count_master <- left_join(UAS_count_master, control_assignments)
